@@ -1,5 +1,8 @@
 ﻿# Image-To-Text
 
+### Introduction
+A program that easily allows you to capture a screengrab of your screen, and immediately analyse and copy whatever text exists within that snapshot.
+
 ### Installation
 1. Head [here](https://github.com/UB-Mannheim/tesseract/wiki "Title") and download tesseract OCR. Install it.
 2. Install the python dependencies with `pip install -r requirements.txt`
