@@ -5,14 +5,21 @@ def runner(text, root):
 
     popup.title("Selected Text")
 
-    text_widget = tk.Text(popup, wrap=tk.WORD, height=20, width=80, font=("Arial", 18))
-    text_widget.pack(padx=20, pady=20)
+    text_widget = tk.Text(popup, wrap=tk.WORD, font=("Arial", 18), undo=True)
+    text_widget.pack(padx=20, pady=20, expand=True, fill=tk.BOTH)
 
     text_widget.insert(tk.END, text)
 
     def close_popup(event=None):
         popup.destroy()
         root.quit()
+
+    # Function to undo the last change in the text widget
+    def undo(event=None):
+        try:
+            text_widget.edit_undo()
+        except tk.TclError:
+            pass
 
     popup.bind('<Escape>', close_popup)
     popup.protocol("WM_DELETE_WINDOW", close_popup)

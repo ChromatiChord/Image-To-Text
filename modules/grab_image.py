@@ -1,5 +1,5 @@
 import config
-import modules.read_image
+import modules.read_image as read_image
 
 import os
 import numpy as np
@@ -43,4 +43,5 @@ def grab_image(image_directory):
     # Wait for the hotkey combination to be pressed
     if all(keyboard.is_pressed(key) for key in config.HOTKEY_KEYS):
         screen_capture(image_directory)
-        time.sleep(1.5)  # Avoid multiple captures due to keypress delay
+        # Avoid multiple captures due to keypress delay
+        time.sleep(1) 
