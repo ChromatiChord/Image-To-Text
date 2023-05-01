@@ -1,5 +1,5 @@
 import time
-from popup import create_popup
+from modules.popup import create_popup
 import pytesseract
 import os
 

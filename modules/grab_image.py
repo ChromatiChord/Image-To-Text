@@ -1,5 +1,5 @@
 import config
-import read_image
+import modules.read_image
 
 import os
 import numpy as np

@@ -1,4 +1,4 @@
-from grab_image import grab_image
+from modules.grab_image import grab_image
 import config
 
 if __name__ == "__main__":
