@@ -7,6 +7,6 @@
 4. Run the program from the command line with `python main.py`
 
 ### Usage
-1. Once the program is running, press the key combination Ctrl+Shift+PrintScreen to take a snapshot (this combination can be changed in config.py).
+1. Once the program is running, press the key combination `Ctrl+Shift+PrintScreen` to take a snapshot (this combination can be changed in config.py).
 2. Select your desired area and press enter to save the snapshot.
 3. Soon after, a popup will appear containing the analysed text from the image.
